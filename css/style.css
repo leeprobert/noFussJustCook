@@ -109,22 +109,22 @@ and (max-device-width : 1024px) {
 
     .img1 {
 
-        background-image: url("http://lorempixel.com/640/480/food/1/");
+        background-image: url("http://lorempixel.com/480/640/food/1/");
     }
 
     .img2 {
 
-        background-image: url("http://lorempixel.com/640/480/food/2/");
+        background-image: url("http://lorempixel.com/480/640/food/2/");
     }
 
     .img3 {
 
-        background-image: url("http://lorempixel.com/640/480/food/3/");
+        background-image: url("http://lorempixel.com/480/640/food/3/");
     }
     
     .img4 {
 
-        background-image: url("http://lorempixel.com/640/480/food/4/");
+        background-image: url("http://lorempixel.com/480/640/food/4/");
     }
 }
 
@@ -133,22 +133,22 @@ and (max-device-width : 1024px) {
 
     .img1 {
 
-        background-image: url("http://lorempixel.com/640/480/food/1/");
+        background-image: url("http://lorempixel.com/270/360/food/1/");
     }
 
     .img2 {
 
-        background-image: url("http://lorempixel.com/640/480/food/2/");
+        background-image: url("http://lorempixel.com/270/360/food/2/");
     }
 
     .img3 {
 
-        background-image: url("http://lorempixel.com/640/480/food/3/");
+        background-image: url("http://lorempixel.com/270/360/food/3/");
     }
     
     .img4 {
 
-        background-image: url("http://lorempixel.com/640/480/food/4/");
+        background-image: url("http://lorempixel.com/270/360/food/4/");
     }
 }
 
@@ -187,7 +187,7 @@ h1, h3{
 
 .header {
     
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -332,8 +332,14 @@ h1, h3{
 
 .title_row {
     
+    position: relative;
     text-align: center;
     height: 100%;
+}
+
+.top_row {
+ 
+    margin-top: 8rem;
 }
 
 .title_row h1 {
@@ -353,10 +359,11 @@ h1, h3{
 
 .chevron{
     
+    position: absolute;
     width: 100%;
-    position: relative;
     text-align: center;
     margin: 0 auto;
+    bottom: 6rem;
 }
 
 .chevron img{
@@ -375,7 +382,7 @@ h1, h3{
 
 .chevron_up{
     
-    top: 24em;
+    top: 28rem;
 }
 
 .chevron a{
@@ -415,63 +422,6 @@ h1, h3{
     }
 }
 
-
-
-/* --------------------------------
-    FOOTER
-*/
-
-#footer .container {
-    
-    width: 100%;
-    height: 100%;
-    padding: 0;
-}
-
-#footer {
-    
-    width: 100%;
-    background: #343434;
-    color: #ddd;
-    padding: 0;
-    text-align: center;
-    height: 100%;
-}
-
-
-
-.footer_item {
- 
-    margin: 0 auto;
-    padding: 0;
-    height: 5em;
-}
-
-.jal_logo{
- 
-    float: left;
-    margin-left: 4em;
-    margin-top: 1.3em;
-    width: 100%;
-    height: auto;
-    max-width: 27em;
-    max-height: 2.4075em; /* need this for IE8  (ratio = 11.2149) */
-}
-
-.oneworld_logo{
- 
-    display: inline-block;
-    float: none;
-    width: auto;
-    height: 100%;
-}
-
-.helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
 /* --------------------------------
     BUTTONS
 */
@@ -487,7 +437,6 @@ h1, h3{
     position: relative;
     margin-top: 2em;
     margin-bottom: 2em;
-    z-index: 999;
 }
 
 .footer_button{
@@ -512,10 +461,4 @@ h1, h3{
     color: white;
     text-decoration: none;
     text-shadow: 1px 1px black;
-}
-
-
-.top_title_row {
-    
-    margin-top: 8rem;
 }
