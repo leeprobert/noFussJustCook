@@ -1,0 +1,22 @@
+/* --------------------------------
+    PARALLAX
+*/
+
+.parallax-container {
+    
+    height: 600px !important;
+}
+
+.parallax-container h1{
+ 
+    font-size: 6em;
+}
+
+/* --------------------------------
+    CONTENT
+*/
+
+.white_row {
+
+    padding: 6em 16em;
+}

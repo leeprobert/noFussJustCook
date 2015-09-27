@@ -1,0 +1,521 @@
+html, body {
+    
+    max-width: 100%;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+body {
+    
+    background: #bada55;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.parallax-container {
+    
+    height: 500px;
+    width: 100%;
+    
+    font-family: "Courgette", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    /*
+        Fallback for IE 8 where we fix the width to 1200
+    */
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    
+    /*
+        For modern browsers we try to use cover and centre
+    */
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    /* IE8 to set position and size manually */
+    background-position/*\**/: 0 0\9;
+    background-size/*\**/: 1200px 1000px\9;
+    
+    z-index: 10;
+    
+    overflow: hidden;
+}
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+        
+    .parallax-container, red_row {
+
+        background-attachment: scroll !important;
+        background-size: auto;
+        -webkit-background-size: auto;
+    }
+}
+
+.title_row h1, .top_title_row h1 {
+    
+    font-weight: 100;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0 1em;
+    font-size: 6em;
+    
+    text-shadow: 3px 3px black;
+}
+
+#content_container{
+ 
+    position: absolute;
+    width: 100%;
+    
+    /*
+        IE8 hack to force the entire site into a fixed width column
+        1200 pixels is the width of the background images that DON'T scale in IE8
+    */
+    max-width/*\**/: 1200px\9;
+}
+
+.img1 {
+ 
+    background-image: url("http://lorempixel.com/640/480/food/1/");
+}
+
+.img2 {
+ 
+    background-image: url("http://lorempixel.com/640/480/food/2/");
+}
+
+.img3 {
+ 
+    background-image: url("http://lorempixel.com/640/480/food/3/");
+}
+    
+.img4 {
+
+    background-image: url("http://lorempixel.com/640/480/food/4/");
+}
+
+@media screen and (max-width: 768px) {
+
+    .img1 {
+
+        background-image: url("http://lorempixel.com/640/480/food/1/");
+    }
+
+    .img2 {
+
+        background-image: url("http://lorempixel.com/640/480/food/2/");
+    }
+
+    .img3 {
+
+        background-image: url("http://lorempixel.com/640/480/food/3/");
+    }
+    
+    .img4 {
+
+        background-image: url("http://lorempixel.com/640/480/food/4/");
+    }
+}
+
+@media screen and (max-width: 480px),
+@media screen and (max-width: 320px) {
+
+    .img1 {
+
+        background-image: url("http://lorempixel.com/640/480/food/1/");
+    }
+
+    .img2 {
+
+        background-image: url("http://lorempixel.com/640/480/food/2/");
+    }
+
+    .img3 {
+
+        background-image: url("http://lorempixel.com/640/480/food/3/");
+    }
+    
+    .img4 {
+
+        background-image: url("http://lorempixel.com/640/480/food/4/");
+    }
+}
+
+
+.menu{
+ 
+    overflow: hidden;
+}
+
+.menu_table {
+ 
+    height: 6em;
+}
+
+
+/* --------------------------------
+    TYPOGRAPHY
+*/
+
+h1{
+ 
+    font-family: "Courgette", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h3{
+ 
+    padding: 0;
+    margin-top: 0;
+}
+
+/* --------------------------------
+    HEADER
+*/
+
+.header {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #bada55;
+    
+    z-index: 999;
+    
+    box-shadow: 0 2px 12px black;
+}
+
+.logo, .menu {
+    
+    margin: 0 auto;
+    padding: 0;
+    height: 8rem;
+}
+
+.logo {
+
+    margin-left: 4em;
+    float: left;
+}
+
+.logo h1{
+    
+    font-family: "Courgette", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    line-height: 8rem;
+    
+    text-shadow: 1px 1px black;
+}
+
+.menu {
+    
+    margin: 0 2em;
+    float: right;
+}
+
+@media screen and (max-width: 768px),
+@media screen and (max-width: 480px),
+@media screen and (max-width: 320px){
+
+    .logo, .menu {
+    
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.nav-pills li a,
+.nav-pills li a:link,
+.nav-pills li a:visited,
+.nav-pills li a:active{
+    
+    font-family: "Courgette", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    font-size: 2rem;
+    
+    border-radius: 0;
+    color: #252525;
+    background: #bada55;
+    display: table-cell;
+    vertical-align: middle;
+    height: 8rem;
+    
+    text-shadow: 1px 1px white;
+}
+
+.nav-pills li a:hover
+{
+    background: yellow;
+}
+
+/* WHITE BUTTON */
+
+.nav-pills li.white a,
+.nav-pills li.white a:link,
+.nav-pills li.white a:visited,
+.nav-pills li.white a:active{
+    
+    color: #252525;
+    background: white;
+}
+
+.nav-pills li.white a:hover
+ {
+    background: #ed1c24;
+    color: white;
+     text-shadow: 1px 1px black;
+}
+
+/* --------------------------------
+    CONTENT
+*/
+.red_row h1 {
+    font-weight: 100;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+.red_row {
+
+    background: #ed1c24;
+    text-align: center;
+    padding: 15em 2em;
+    
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.white_row {
+    background: #fff;
+    padding: 4em 6em;
+}
+
+.row img {
+
+    width: 100%;
+    max-width: 20em;
+    float: right;
+    float/*\**/: left\9; /* Hack for IE8 */
+    margin/*\**/: 0 1em 1em 0\9; /* Hack for IE8 */
+}
+
+@media screen and (max-width: 990px) {
+    
+    .row img {
+        
+        float: none;
+    }
+}
+
+.title_row {
+    
+    text-align: center;
+    height: 100%;
+}
+
+.title_row h1 {
+    
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.space_title_row h1{
+ 
+    position: relative;
+    top: 45%;
+}
+
+.chevron{
+    
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.chevron img{
+ 
+    display: block;
+    float: none;
+    width: 2.5em;
+    margin: 0 auto;
+    height: auto;
+}
+
+.chevron_down{
+    
+    top: 1em;
+}
+
+.chevron_up{
+    
+    top: 24em;
+}
+
+.chevron a{
+    
+    color: white;
+}
+
+.multi_image{
+
+    float: right;
+    float/*\**/: left\9; /* Hack for IE8 */
+    margin: 10px;
+    margin/*\**/: 0 1em 1em 0\9; /* Hack for IE8 */
+}
+
+.multi_image img{
+    
+    width: 15em;
+    height: auto;
+    height/*\**/: 15em\9; /* Hack for IE8 */
+}
+
+@media screen and (max-width: 1024px) {
+
+    .multi_image{
+
+        margin: 10px 10px 10px 0;
+        display: inline-block;
+        float: none;
+    }
+    
+    .multi_image img{
+    
+        width: 12em;
+        height: auto;
+        height/*\**/: 12em\9; /* Hack for IE8 */
+    }
+}
+
+
+
+/* --------------------------------
+    FOOTER
+*/
+
+#footer .container {
+    
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+#footer {
+    
+    width: 100%;
+    background: #343434;
+    color: #ddd;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+}
+
+
+
+.footer_item {
+ 
+    margin: 0 auto;
+    padding: 0;
+    height: 5em;
+}
+
+.jal_logo{
+ 
+    float: left;
+    margin-left: 4em;
+    margin-top: 1.3em;
+    width: 100%;
+    height: auto;
+    max-width: 27em;
+    max-height: 2.4075em; /* need this for IE8  (ratio = 11.2149) */
+}
+
+.oneworld_logo{
+ 
+    display: inline-block;
+    float: none;
+    width: auto;
+    height: 100%;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/* --------------------------------
+    BUTTONS
+*/
+
+.button {
+    
+    font-family: "Courgette", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    font-size: 2rem;
+    
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    z-index: 999;
+}
+
+.footer_button{
+ 
+    float: right;
+    margin-right: 4em;
+    margin-top: 1.9em;
+    margin-bottom: 0;
+}
+
+.button a {
+    background: #bada55;
+    color: black;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 2rem;
+    text-shadow: 1px 1px white;
+}
+
+.button a:hover {
+    background: #ed1c24;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+}
+
+
+.top_title_row {
+    
+    margin-top: 8rem;
+}

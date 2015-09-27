@@ -1,0 +1,164 @@
+/* --------------------------------
+    HEADER
+*/
+
+.header{
+  
+/*    padding-top: 1em;*/
+    margin: 0;
+}
+
+.logo,
+.menu {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+}
+
+.logo img {
+
+    max-height: 2em;
+}
+
+.menu{
+ 
+    padding-top: 1em;
+}
+
+.logo_wrapper{
+ 
+    width: 100%;
+    padding-top: 1em;
+}
+
+.nav-pills {
+
+    float: none;
+}
+
+.nav-pills li {
+    
+    display: table;
+    width: 100%;
+}
+
+.parallax-container {
+    
+    height: 400px !important;
+}
+
+.parallax-container h1, .top_title_row h1{
+ 
+    font-size: 4em;
+}
+
+/* --------------------------------
+    CONTENT
+*/
+
+.white_row {
+
+    padding: 2em;
+}
+
+.red_row {
+
+    padding: 6em 2em;
+}
+
+.row img {
+
+    margin-top: 2em;
+    float: none;
+}
+
+.multi_image{
+
+    float: none;
+    margin: 0;
+    margin-bottom: 2em;
+    padding: 0;
+    width: 100% !important;
+}
+
+.multi_image img{
+    
+    width: 100% !important;
+}
+
+.chevron{
+    
+    top: 6em;
+}
+
+.chevron img{
+ 
+    width: 1em;
+}
+
+.chevron_down{
+    
+    top: 1em;
+}
+
+.chevron_up{
+    
+    top: 8em;
+}
+
+/* --------------------------------
+    VIDEO
+*/
+
+#top_content_container{
+ 
+    margin-top: 17em;
+}
+
+#video_container {
+    
+    height: 300px;
+}
+
+#video_top_container {
+    
+    top: 23em;
+}
+
+video {
+    
+    height: 100%;
+}
+
+/* --------------------------------
+    FOOTER
+*/
+
+.jal_logo{
+ 
+    float: left;
+    margin-left: 2em;
+    margin-top: 2em;
+    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+    max-width: 25em;
+    max-height: 2.41666em; /* need this for IE8  (ratio = 10.34482) */
+}
+
+.footer_button{
+ 
+    margin-right: 2em;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.footer_button a {
+
+    padding: 0.8em;
+    font-size: 0.8em;
+}
+
+
+
