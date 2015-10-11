@@ -78,6 +78,13 @@
     float: none;
 }
 
+.title_row img{
+ 
+    margin-top: 25%;
+    width: 80%;
+    height: auto;
+}
+
 .multi_image{
 
     float: none;

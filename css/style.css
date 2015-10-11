@@ -344,13 +344,36 @@ h1, h3{
     margin/*\**/: 0 1em 1em 0\9; /* Hack for IE8 */
 }
 
+.title_row img{
+ 
+    margin-top: 10rem;
+    width: 50%;
+    max-width: 50rem;
+    height: auto;
+}
+
 @media screen and (max-width: 990px) {
     
     .row img {
         
         float: none;
     }
+    
+    .title_row img{
+ 
+        margin-top: 14rem;
+        width: 60%;
+    }
 }
+
+@media screen and (max-width: 768px) {
+
+    .title_row img{
+ 
+        margin-top: 18rem;
+    }
+}
+
 
 .title_row {
     
